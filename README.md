@@ -17,14 +17,8 @@ The MLP achieved a final test accuracy of **91.33%**. Key engineering insights i
 * **Optimal Learning Rate**: Through Grid Search, **0.001** was identified as the ideal balance between convergence speed and stability.
 * **Regularization**: Batch Normalization was critical; without it, the 6-layer architecture suffered from slower training and lower accuracy.
 
-![MLP Training Loss](assets/mlp_loss.png)
-> *Note: Place your MLP training/validation loss graph (from Report 4) in the `assets/` folder.*
-
 ### 2. Decision Boundaries & Inductive Bias
 The project demonstrated that while MLPs are highly flexible, **XGBoost** often excels at capturing the axis-aligned nature of coordinate data. Tree-based models create precise "rectangular" partitions that mirror political borders more naturally than the smooth transitions of a neural network.
-
-![Decision Boundaries](assets/decision_boundaries.png)
-> *Note: Place your decision boundary map (from the report) in the `assets/` folder.*
 
 ## 🛠 Tech Stack
 * **Deep Learning**: PyTorch
